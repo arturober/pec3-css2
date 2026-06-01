@@ -1,0 +1,36 @@
+<header class="sticky top-0 z-50 text-madera-base p-4 bg-[color-mix(in_srgb,var(--color-lino-light)_75%,transparent)] backdrop-blur-md justify-between">
+  <div class="w-full mx-auto px-6 max-w-7xl @container md:px-8 xl:px-0 flex gap-6 items-center justify-between">
+    <div class="font-bold text-h4 uppercase tracking-wide text-shadow-md">
+      <a href="index.html" class="flex gap-6 items-center ">
+        <picture>
+          <source type="image/avif" srcset="assets/images/logo.avif?height=100" />
+          <source type="image/webp" srcset="assets/images/logo.webp?height=100" />
+          <img src="assets/images/logo.png?height=100" alt="Logo" class="h-12.5 drop-shadow-md" />
+        </picture>
+        Woodstyle
+      </a>
+    </div>
+    <nav class="flex gap-6 items-center">
+      <input type="checkbox" id="menu-opened" class="hidden peer" />
+      <label for="menu-opened" class="cursor-pointer inline-block z-10 group peer-checked:text-lino-base md:hidden">
+        <svg
+          width="30"
+          height="30"
+          class="block"
+          viewBox="0 -960 960 960"
+          fill="currentColor"
+          id="menu"
+          aria-label="Abrir menú de navegación"
+        >
+          <path class="z-10 transition-all duration-300 ease-in-out origin-center transform-fill group-peer-checked:translate-y-50 group-peer-checked:rotate-45" d="M120-640v-80h720v80H120Z" />
+          <path class="z-10 transition-all duration-300 ease-in-out origin-center transform-fill group-peer-checked:opacity-0 group-peer-checked:scale-x-0" d="M120-440v-80h720v80H120Z" />
+          <path class="z-10 transition-all duration-300 ease-in-out origin-center transform-fill group-peer-checked:-translate-y-50 group-peer-checked:-rotate-45" d="M120-240v-80h720v80H120Z" />
+        </svg>
+      </label>
+      <ul class="group flex items-center flex-col gap-0 pt-20 bg-madera-base fixed w-50 h-dvh top-0 right-0 translate-x-full transition-transform ease-in-out duration-300 peer-checked:translate-0 md:flex-row md:pt-0 md:bg-transparent md:relative md:w-auto md:h-auto md:translate-0">
+        <li class="p-2 w-full md:py-0 md:px-4 md:w-auto"><a href="speakers.html" class="text-lino-base inline-block w-full pl-4 hover:text-lino-light md:text-madera-dark md:pl-0 md:hover:text-madera-light">Ponentes</a></li>
+        <li class="p-2 w-full md:py-0 md:px-4 md:w-auto"><a href="speakers.html" class="text-lino-base inline-block w-full pl-4 hover:text-lino-light md:text-madera-dark md:pl-0 md:hover:text-madera-light">Página IA</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
