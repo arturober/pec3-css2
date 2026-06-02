@@ -1,0 +1,14 @@
+<div class="speaker-card">
+  <picture>
+    <source type="image/avif" srcset="assets/images/{{ image }}.jpeg?as=avif" />
+    <source type="image/webp" srcset="assets/images/{{ image }}.jpeg?as=webp" />
+    <img src="assets/images/{{ image }}.jpeg" class="w-full aspect-4/3 object-cover" alt="{{ alt }}" />
+  </picture>
+  <div class="p-4 text-madera-dark flex-auto">
+    <h4 class="text-terracota-base text-h4">{{ name }}</h4>
+    <h6 class="text-salvia-base text-small">{{ role }}</h6>
+    <p>
+      {{ description }}
+    </p>
+  </div>
+</div>

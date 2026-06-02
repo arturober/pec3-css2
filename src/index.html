@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -15,27 +15,9 @@
     <title>Bienvenido | WoodStyle</title>
     <script type="module" src="assets/scripts/main.js"></script>
   </head>
-  <body class="flex flex-col min-h-dvh font-base leading-base overflow-hidden">
+  <body class="flex flex-col min-h-dvh font-base text-base overflow-hidden text-madera-dark leading-body bg-lino-light gap-0">
     <include src="./views/header.html"></include>
-    <main class="grow bg-cover bg-center bg-[url(../images/portada.jpg?as=avif)] grid grid-cols-1 grid-rows-[100px_1fr_0px_100px_0px_0px_250px] md:grid-cols-[1fr_100px_minmax(500px,50%)] md:grid-rows-[100px_1fr_100px_200px_100px]">
-      <div class="bg-linear-to-b from-0% from-lino-light to-transparent md:col-span-3"></div>
-      <div class="md:col-start-2 md:row-start-4 md:bg-linear-to-l md:from-20% md:from-lino-light md:to-transparent"></div>
-      <div class="md:col-start-2 md:row-start-3 md:bg-radial-[circle_at_bottom_right] md:from-lino-light md:from-15% md:to-transparent md:to-70%"></div>
-      <div class="bg-linear-to-t from-lino-light from-20% to-transparent md:col-start-3 md:row-start-3"></div>
-      <div class="md:col-start-2 md:row-start-5 md:bg-radial-[circle_at_top_left] md:from-0% md:from-transparent md:to-lino-light md:to-55%"></div>
-      <div class="md:col-start-1 md:row-start-5 md:bg-linear-to-t md:from-lino-light md:from-20% md:to-transparent"></div>
-      <div class="p-4 text-center flex flex-col justify-center gap-2 bg-lino-light md:pl-0 md:col-start-3 md:row-start-4 md:row-span-2 @container">
-        <h1 class="text-salvia-dark uppercase font-heading leading-heading text-h2">I Jornadas de Artesanía Sostenible</h1>
-        <h2 class="text-terracota-base font-heading leading-heading text-h3">Un retorno a los orígenes</h2>
-        <div class="flex flex-col gap-4 justify-center items-center @min-xl:pt-4 @min-xl:flex-row">
-          <div class="border-2 border-solid border-salvia-base text-salvia-base w-fit py-2 px-4 uppercase font-semibold">
-            <p>15-18 de mayo, 2026</p>
-            <p>Priego, Cuenca</p>
-          </div>
-          <a class="block w-fit py-2 px-4 uppercase font-semibold bg-terracota-base text-lino-light hover:bg-terracota-dark" href="#">Reserva tu plaza ahora</a>
-        </div>
-      </div>
-    </main>
+    <include src="./views/main-portada.html"></include>
     <include src="./views/footer.html"></include>
   </body>
 </html>
